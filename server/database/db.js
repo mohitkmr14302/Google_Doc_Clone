@@ -1,6 +1,8 @@
 import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+dotenv.config();
 const connection =async ()=>{
-    const URL=`mongodb://mohit:9qg2hBH.ri84xMN@cluster0-shard-00-00.4nu99.mongodb.net:27017,cluster0-shard-00-01.4nu99.mongodb.net:27017,cluster0-shard-00-02.4nu99.mongodb.net:27017/DOC_CLONE?ssl=true&replicaSet=atlas-wlt3dc-shard-0&authSource=admin&retryWrites=true&w=majority`
+    const URL=process.env.MONGO_URL;
     try {
         await mongoose.connect(URL, {
             useNewUrlParser: true,
