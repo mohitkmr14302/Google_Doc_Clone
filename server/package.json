@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "Mohit kumar",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.1.8",
+    "socket.io": "^4.4.1"
+  }
+}
